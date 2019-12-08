@@ -72,6 +72,15 @@ public class UserDao {
         }
     }
 
-
+    public void delete(int userId) {
+        try (Connection conn = DriverManager.getConnection(URL, USER, PASSWORD)) {
+            PreparedStatement statement = conn.prepareStatement(DELETE_USER_QUERY);
+            statement.setInt(1, userId);
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 
 }
+

@@ -6,9 +6,9 @@ import pl.models.User;
 public class Application {
 
     public static void main(String[] args) {
-        User user = new User("Hubert", "hubertlakomski@gmail.com", "password");
+        User user = new User("Hubert", "hubertlakomski@gmail.com", "password", 0);
 
-//        UserDao userDao = new UserDao();
+        UserDao userDao = new UserDao();
 //        //CREATE użytkownika do bazy danych
 //        System.out.println("Przed zapisem: "+user);
 //        User savedUser = userDao.create(user);
@@ -28,5 +28,20 @@ public class Application {
 //
 //        //DELETE użytkownika z bazy danych
 //        userDao.delete(1);
+
+        User newUser1 = new User("hubertlakomski",
+                "hubertlakomski@gmai.com",
+                "password", 0);
+        userDao.create(newUser1);
+        User newUser2 = new User("hlakomski",
+                "hlakomski@gmail.com",
+                "passwordlakomski", 0);
+        userDao.create(newUser2);
+
+        User[] allUsers = userDao.findAll();
+
+        for(User user1: allUsers){
+            System.out.println(user1);
+        }
     }
 }

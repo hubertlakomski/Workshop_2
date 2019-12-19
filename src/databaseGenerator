@@ -28,7 +28,7 @@ CREATE TABLE exercises(
 );
 
 CREATE TABLE solution(
-  id INT(11),
+  id INT(11) AUTO_INCREMENT,
   created DATETIME,
   updated DATETIME,
   description TEXT,

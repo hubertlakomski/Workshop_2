@@ -1,6 +1,10 @@
 package pl;
 
+import pl.dao.ExerciseDao;
+import pl.dao.SolutionDao;
 import pl.dao.UserDao;
+import pl.models.Exercise;
+import pl.models.Solution;
 import pl.models.User;
 
 public class Application {
@@ -43,5 +47,16 @@ public class Application {
         for(User user1: allUsers){
             System.out.println(user1);
         }
+
+        ExerciseDao exerciseDao = new ExerciseDao();
+
+        Exercise newExercise1 = new Exercise("Zadanie 1", "Super łatwe");
+
+        exerciseDao.create(newExercise1);
+
+        SolutionDao solutionDao = new SolutionDao();
+
+        Solution newSolution1 = new Solution(2017-07-23, 2017-07-23, "szybko zrobiłem", 1, 1);
+
     }
 }

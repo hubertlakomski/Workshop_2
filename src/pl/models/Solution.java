@@ -1,17 +1,17 @@
 package pl.models;
 
-import java.time.LocalDateTime;
+import java.sql.Timestamp;
 
 public class Solution {
 
     private int id;
-    private LocalDateTime created;
-    private LocalDateTime updated;
+    private Timestamp created;
+    private Timestamp updated;
     private String description;
     private int exerciseId;
     private int usersId;
 
-    public Solution(LocalDateTime created, LocalDateTime updated, String description, int exerciseId, int usersId) {
+    public Solution(Timestamp created, Timestamp updated, String description, int exerciseId, int usersId) {
         this.created = created;
         this.updated = updated;
         this.description = description;
@@ -30,19 +30,19 @@ public class Solution {
         this.id = id;
     }
 
-    public LocalDateTime getCreated() {
+    public Timestamp getCreated() {
         return created;
     }
 
-    public void setCreated(LocalDateTime created) {
+    public void setCreated(Timestamp created) {
         this.created = created;
     }
 
-    public LocalDateTime getUpdated() {
+    public Timestamp getUpdated() {
         return updated;
     }
 
-    public void setUpdated(LocalDateTime updated) {
+    public void setUpdated(Timestamp updated) {
         this.updated = updated;
     }
 

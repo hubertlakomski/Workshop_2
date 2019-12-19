@@ -4,7 +4,7 @@ import pl.dao.UserDao;
 
 import java.util.Scanner;
 
-public class Menu {
+public class UserMenu {
 
     public void turn(){
         System.out.println("Użytkownicy: ");

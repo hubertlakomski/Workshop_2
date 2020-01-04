@@ -65,7 +65,7 @@ public class ExerciseMenu {
             exerciseId = input.nextInt();
             input.nextLine();
 
-            System.out.print("1. Podaj nazwę: ");
+            System.out.print("1. Podaj tytuł: ");
             title = input.nextLine();
             System.out.print("2. Podaj treść: ");
             description = input.nextLine();

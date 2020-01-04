@@ -1,18 +1,17 @@
 package pl;
 
-import pl.models.ExerciseMenu;
-import pl.models.UserMenu;
+import pl.models.GroupMenu;
 
 public class Application {
 
     public static void main(String[] args) {
 
-        UserMenu userMenu = new UserMenu();
-        ExerciseMenu exerciseMenu = new ExerciseMenu();
+        GroupMenu groupMenu = new GroupMenu();
 
         while(true){
-            exerciseMenu.turn();
+            groupMenu.turn();
         }
+
 
     }
 }

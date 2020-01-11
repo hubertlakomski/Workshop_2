@@ -1,15 +1,15 @@
 package pl;
 
-import pl.models.GroupMenu;
+import pl.models.SolutionMenu;
 
 public class Application {
 
     public static void main(String[] args) {
 
-        GroupMenu groupMenu = new GroupMenu();
+        SolutionMenu solutionMenu = new SolutionMenu();
 
         while(true){
-            groupMenu.turn();
+            SolutionMenu.turn();
         }
 
 

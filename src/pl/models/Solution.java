@@ -11,9 +11,8 @@ public class Solution {
     private int exerciseId;
     private int usersId;
 
-    public Solution(Timestamp created, Timestamp updated, String description, int exerciseId, int usersId) {
+    public Solution(Timestamp created, String description, int exerciseId, int usersId) {
         this.created = created;
-        this.updated = updated;
         this.description = description;
         this.exerciseId = exerciseId;
         this.usersId = usersId;

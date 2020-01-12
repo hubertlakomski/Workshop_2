@@ -20,7 +20,7 @@ public class ExerciseMenu {
         String[] options = {"1. Dodanie zadania",
                 "2. Edycja zadania",
                 "3. Usunięcie zadania",
-                "4.Powrót do poprzedniego menu"};
+                "4. Powrót do poprzedniego menu"};
 
         System.out.println("Opcje: ");
 

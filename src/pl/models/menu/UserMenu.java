@@ -20,7 +20,7 @@ public class UserMenu {
         String[] options = {"1. Dodanie użytkownika",
                 "2. Edycja użytkownika",
                 "3. Usunięcie użytkownika",
-                "4.Powrót do poprzedniego menu"};
+                "4. Powrót do poprzedniego menu"};
 
         System.out.println("Opcje: ");
 

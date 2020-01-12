@@ -20,7 +20,7 @@ public class GroupMenu {
         String[] options = {"1. Dodanie grupy",
                 "2. Edycja grupy",
                 "3. Usunięcie grupy",
-                "4.Powrót do poprzedniego menu"};
+                "4. Powrót do poprzedniego menu"};
 
         System.out.println("Opcje: ");
 

@@ -21,7 +21,7 @@ public class SolutionMenu {
         String[] options = {"1. Dodanie rozwiązania",
                 "2. Edycja rozwiązania",
                 "3. Usunięcie rozwiązania",
-                "4.Powrót do poprzedniego menu"};
+                "4. Powrót do poprzedniego menu"};
 
         System.out.println("Opcje: ");
 

@@ -1,7 +1,7 @@
 package pl;
 
-import pl.models.menu.BasicMenu;
-import pl.models.menu.SolutionMenu;
+import pl.models.adminMenus.AdminMenu;
+import pl.models.adminMenus.SolutionMenu;
 
 public class Application {
 
@@ -10,9 +10,9 @@ public class Application {
         SolutionMenu solutionMenu = new SolutionMenu();
 
         while(true){
-            BasicMenu basicMenu = new BasicMenu();
+            AdminMenu adminMenu = new AdminMenu();
 
-            basicMenu.turn();
+            adminMenu.turn();
         }
 
 

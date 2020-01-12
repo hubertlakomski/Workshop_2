@@ -1,4 +1,4 @@
-package pl.models.menu;
+package pl.models.adminMenus;
 
 import pl.dao.SolutionDao;
 import pl.models.Solution;
@@ -115,7 +115,7 @@ public class SolutionMenu {
         }
 
         else if(choice==4){
-            BasicMenu basicMenu = new BasicMenu();
+            AdminMenu basicMenu = new AdminMenu();
             basicMenu.turn();
         }
 

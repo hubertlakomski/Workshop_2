@@ -1,4 +1,4 @@
-package pl.models.menu;
+package pl.models.adminMenus;
 
 import pl.dao.UserDao;
 import pl.models.User;
@@ -104,8 +104,8 @@ public class UserMenu {
         }
 
         else if(choice==4){
-            BasicMenu basicMenu = new BasicMenu();
-            basicMenu.turn();
+            AdminMenu adminMenu = new AdminMenu();
+            adminMenu.turn();
         }
 
         else{

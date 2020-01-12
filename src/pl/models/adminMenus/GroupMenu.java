@@ -1,4 +1,4 @@
-package pl.models.menu;
+package pl.models.adminMenus;
 
 import pl.dao.GroupDao;
 import pl.models.Group;
@@ -89,8 +89,8 @@ public class GroupMenu {
         }
 
         else if(choice==4){
-            BasicMenu basicMenu = new BasicMenu();
-            basicMenu.turn();
+            AdminMenu adminMenu = new AdminMenu();
+            adminMenu.turn();
         }
 
         else{

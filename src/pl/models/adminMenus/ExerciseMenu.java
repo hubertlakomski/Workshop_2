@@ -1,4 +1,4 @@
-package pl.models.menu;
+package pl.models.adminMenus;
 
 import pl.dao.ExerciseDao;
 import pl.models.Exercise;
@@ -95,8 +95,8 @@ public class ExerciseMenu {
         }
 
         else if(choice==4){
-            BasicMenu basicMenu = new BasicMenu();
-            basicMenu.turn();
+            AdminMenu adminMenu = new AdminMenu();
+            adminMenu.turn();
         }
 
         else{

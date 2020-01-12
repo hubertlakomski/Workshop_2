@@ -1,8 +1,8 @@
-package pl.models.menu;
+package pl.models.adminMenus;
 
 import java.util.Scanner;
 
-public class BasicMenu {
+public class AdminMenu {
 
     public void turn(){
         String[] options = {"1. Użytkownicy",

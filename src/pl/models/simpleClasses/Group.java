@@ -1,4 +1,4 @@
-package pl.models;
+package pl.models.simpleClasses;
 
 public class Group {
     private int id;

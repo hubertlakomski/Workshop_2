@@ -1,8 +1,6 @@
 package pl.dao;
 
-import pl.models.Exercise;
-import pl.models.Solution;
-import pl.models.User;
+import pl.models.simpleClasses.Solution;
 
 import java.sql.*;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package pl.models;
+package pl.models.simpleClasses;
 
 import org.mindrot.jbcrypt.BCrypt;
 

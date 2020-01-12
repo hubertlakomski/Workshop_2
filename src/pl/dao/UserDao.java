@@ -1,6 +1,6 @@
 package pl.dao;
 
-import pl.models.User;
+import pl.models.simpleClasses.User;
 
 import java.sql.*;
 import java.util.Arrays;

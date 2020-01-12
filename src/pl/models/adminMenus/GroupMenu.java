@@ -1,7 +1,7 @@
 package pl.models.adminMenus;
 
 import pl.dao.GroupDao;
-import pl.models.Group;
+import pl.models.simpleClasses.Group;
 
 import java.util.Scanner;
 

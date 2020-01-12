@@ -1,7 +1,7 @@
 package pl.models.adminMenus;
 
 import pl.dao.UserDao;
-import pl.models.User;
+import pl.models.simpleClasses.User;
 
 import java.util.Scanner;
 

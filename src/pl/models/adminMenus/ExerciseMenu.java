@@ -1,7 +1,7 @@
 package pl.models.adminMenus;
 
 import pl.dao.ExerciseDao;
-import pl.models.Exercise;
+import pl.models.simpleClasses.Exercise;
 
 import java.util.Scanner;
 

@@ -1,7 +1,7 @@
 package pl.models.adminMenus;
 
 import pl.dao.SolutionDao;
-import pl.models.Solution;
+import pl.models.simpleClasses.Solution;
 
 import java.sql.Timestamp;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package pl.models.adminMenus;
+package pl.models.menus.adminMenu;
 
 import pl.dao.ExerciseDao;
 import pl.models.simpleClasses.Exercise;

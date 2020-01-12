@@ -1,7 +1,7 @@
 package pl;
 
-import pl.models.adminMenus.AdminMenu;
-import pl.models.adminMenus.SolutionMenu;
+import pl.models.menus.adminMenu.AdminMenu;
+import pl.models.menus.adminMenu.SolutionMenu;
 
 public class Application {
 

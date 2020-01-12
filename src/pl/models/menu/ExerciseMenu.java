@@ -1,6 +1,7 @@
-package pl.models;
+package pl.models.menu;
 
 import pl.dao.ExerciseDao;
+import pl.models.Exercise;
 
 import java.util.Scanner;
 
@@ -19,7 +20,8 @@ public class ExerciseMenu {
         String[] options = {"1. Dodanie zadania",
                 "2. Edycja zadania",
                 "3. Usunięcie zadania",
-                "4. Zakończenie programu"};
+                "4. Zakończenie programu",
+                "5.Powrót do poprzedniego menu"};
 
         System.out.println("Opcje: ");
 
@@ -95,6 +97,11 @@ public class ExerciseMenu {
 
         else if(choice==4){
             System.exit(0);
+        }
+
+        else if(choice==5){
+            BasicMenu basicMenu = new BasicMenu();
+            basicMenu.turn();
         }
 
         else{

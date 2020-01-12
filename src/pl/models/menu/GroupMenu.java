@@ -1,6 +1,7 @@
-package pl.models;
+package pl.models.menu;
 
 import pl.dao.GroupDao;
+import pl.models.Group;
 
 import java.util.Scanner;
 
@@ -19,7 +20,8 @@ public class GroupMenu {
         String[] options = {"1. Dodanie grupy",
                 "2. Edycja grupy",
                 "3. Usunięcie grupy",
-                "4. Zakończenie programu"};
+                "4. Zakończenie programu",
+                "5.Powrót do poprzedniego menu"};
 
         System.out.println("Opcje: ");
 
@@ -89,6 +91,11 @@ public class GroupMenu {
 
         else if(choice==4){
             System.exit(0);
+        }
+
+        else if(choice==5){
+            BasicMenu basicMenu = new BasicMenu();
+            basicMenu.turn();
         }
 
         else{

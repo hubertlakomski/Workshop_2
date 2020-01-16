@@ -1,20 +1,16 @@
 package pl;
 
-import pl.models.menus.adminMenu.AdminMenu;
-import pl.models.menus.adminMenu.SolutionMenu;
+import pl.models.menus.userMenu.UserPanel;
 
 public class Application {
 
     public static void main(String[] args) {
 
-        SolutionMenu solutionMenu = new SolutionMenu();
+        UserPanel userPanel = new UserPanel();
 
-        while(true){
-            AdminMenu adminMenu = new AdminMenu();
-
-            adminMenu.turn();
+        while(true) {
+            userPanel.turn();
         }
-
 
     }
 }

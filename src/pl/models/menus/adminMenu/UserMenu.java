@@ -44,7 +44,8 @@ public class UserMenu {
             System.out.println("Dodawanie użytkownika");
 
             System.out.print("1. Podaj imię: ");
-            name = input.next();
+            name = input.nextLine();
+            input.nextLine();
             System.out.print("2. Podaj email: ");
             email = input.next();
             System.out.print("3. Podaj hasło: ");
@@ -72,7 +73,8 @@ public class UserMenu {
             userId = input.nextInt();
 
             System.out.print("1. Podaj imię: ");
-            name = input.next();
+            name = input.nextLine();
+            input.nextLine();
             System.out.print("2. Podaj email: ");
             email = input.next();
             System.out.print("3. Podaj hasło: ");

@@ -4,6 +4,7 @@ import pl.dao.SolutionDao;
 import pl.models.simpleClasses.Solution;
 
 import java.sql.Timestamp;
+import java.util.List;
 import java.util.Scanner;
 
 public class SolutionMenu {
@@ -21,7 +22,8 @@ public class SolutionMenu {
         String[] options = {"1. Dodanie rozwiązania",
                 "2. Edycja rozwiązania",
                 "3. Usunięcie rozwiązania",
-                "4. Powrót do poprzedniego menu"};
+                "4. Wyświetlenie rozwiązań",
+                "5. Powrót do poprzedniego menu"};
 
         System.out.println("Opcje: ");
 
@@ -113,8 +115,20 @@ public class SolutionMenu {
             System.out.println("Rozwiązanie usunięte..");
 
         }
-
         else if(choice==4){
+            System.out.println("Wyświetlanie rozwiązań");
+
+            System.out.print("Podaj ile ostatnich rozwiązań wyświetlić: ");
+            int numberOfSolutions=input.nextInt();
+
+            List<Solution> solutions = solutionDao.findRecent(numberOfSolutions);
+
+            for(Solution solution: solutions){
+                System.out.println(solution);
+            }
+        }
+
+        else if(choice==5){
             AdminMenu basicMenu = new AdminMenu();
             basicMenu.turn();
         }

@@ -3,7 +3,9 @@ package pl.dao;
 import pl.models.simpleClasses.Solution;
 
 import java.sql.*;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class SolutionDao {
 
@@ -21,6 +23,8 @@ public class SolutionDao {
             "SELECT * FROM solution WHERE users_id = ?";
     private static final String FIND_ALL_SOLUTIONS_BY_EXERCISE_ID_QUERY =
             "SELECT * FROM solution WHERE exercise_id = ?";
+    private static final String FIND_RECENT_SOLUTIONS_BY_ENTERING_QUANTITY_QUERY =
+            "SELECT * FROM solution ORDER BY created DESC LIMIT";
 
     public Solution create(Solution solution) {
         try (Connection conn = DBConnection.getConnection()) {
@@ -169,6 +173,36 @@ public class SolutionDao {
             return solutions;
         }
         catch(SQLException e){
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    public List<Solution> findRecent(int numberOfSolutions){
+
+        try (Connection conn = DBConnection.getConnection()) {
+
+            List<Solution> solutions = new ArrayList<>();
+
+            PreparedStatement statement = conn.prepareStatement(FIND_RECENT_SOLUTIONS_BY_ENTERING_QUANTITY_QUERY+" "+numberOfSolutions);
+
+            ResultSet resultSet = statement.executeQuery();
+            while (resultSet.next()) {
+                Solution solution = new Solution();
+                solution.setId(resultSet.getInt("id"));
+                solution.setCreated(resultSet.getTimestamp("created"));
+                solution.setUpdated(resultSet.getTimestamp("updated"));
+                solution.setDescription(resultSet.getString("description"));
+                solution.setExerciseId(resultSet.getInt("exercise_id"));
+                solution.setUsersId(resultSet.getInt("users_id"));
+                solutions.add(solution);
+            }
+
+            return solutions;
+
+        }
+
+        catch (SQLException e) {
             e.printStackTrace();
             return null;
         }
